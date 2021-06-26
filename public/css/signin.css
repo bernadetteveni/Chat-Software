@@ -1,0 +1,139 @@
+/* From the BootStrap Sign-In Template */
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.center{
+  margin: auto;
+  width: 75%;
+  padding: 10px;
+}
+
+.tab{
+  cursor: pointer;
+  padding:10px 20px;
+  font-size: 14px;
+  width: 100px;
+  background:#f6f6f6;
+  display:inline-block;
+  color: #56acff;
+  text-decoration: underline;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.5rem  #bcbcbc;
+}
+
+.panels{
+  background: white;
+  box-shadow: 0 0.5rem 0.5rem  #bcbcbc;
+  height:220px;
+  width:100%;
+  max-width:260px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+
+.panel{
+  display:none;
+  animation: fadein .8s;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+.panelTitle{
+  font-size:1.2em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color:#606060;
+  text-align:center;
+}
+
+.radio{
+  display:none;
+}
+
+#one:checked ~ .panels #panelOne,
+#two:checked ~ .panels #panelTwo{
+  display:block
+}
+
+#one:checked ~ .tabs #tabOne,
+#two:checked ~ .tabs #tabTwo{
+  background:#f6f6f6;
+  color: #56acff;
+  border-top: 3px solid #000;
+}
+
+@font-face {
+  font-family: 'uni_sansheavy_caps';
+  src: url('../fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
+       url('../fonts/uni_sans_heavy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.tab {
+  margin: 0px;
+}
+
+body {
+  justify-content: center;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+h1, h2 {
+  font-family: 'uni_sansheavy_caps', Fallback, sans-serif;
+  text-align: center; 
+}
+
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+  }
+}
