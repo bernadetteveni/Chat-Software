@@ -1,4 +1,4 @@
-# Chat Software
+# Group Chat Application
 
 ## Objective 
 The objective for this program is to create a simple group chat application using the Node.js stack. 
