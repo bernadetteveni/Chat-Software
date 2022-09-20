@@ -7,12 +7,12 @@ A logged in user types a message in chat and, on send, this message is recorded 
 When user accesses the chat page, all of the messages are read from the database and passed to EJS for rendering. The chat content is dynamic.
 
 ## Instructions
-Download Node.js 
-Install Express.js in the terminal
-``` npm install express ```
-Run locally on your machine
-``` node entryPoint.js ```
-The applicaiton will run on port 3000
+Download Node.js\
+Install Express.js in the terminal\
+``` npm install express ``` \
+Run locally on your machine\
+``` node entryPoint.js ``` \
+The applicaiton will run on port 3000\
 http://localhost:3000/ in the browser
 
 ## Equipment 
